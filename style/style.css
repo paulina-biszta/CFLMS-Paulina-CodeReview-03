@@ -168,7 +168,7 @@ select {
 button {
     margin: 2vw auto;
     display: block;
-    background-color: green;
+    background-color: rgb(12, 158, 12);
     text-decoration: none;
     width: 20vw;
     height: 3vw;
@@ -184,7 +184,7 @@ button:hover {
 }
 
 #result {
-    color: green;
+    color: rgb(12, 158, 12);
     font-size: 2.3vw;
     margin: 3.3vw 15vw 0;
     font-weight: medium;
@@ -255,7 +255,7 @@ p {
 }
 
 span {
-    color: green;
+    color: rgb(12, 158, 12);
     padding-right: 2vw;
 }
 
