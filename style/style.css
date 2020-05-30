@@ -7,6 +7,9 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/*header and nav starts here*/
+
 * header {
     width: 100%;
     background-color: #FFF3F3;
@@ -78,6 +81,12 @@
     font-size: 1.8vw;
     color: white;
 }
+
+
+/*header and nav ends here*/
+
+
+/*main starts here*/
 
 * #background {
     width: 100%;
@@ -263,6 +272,12 @@ span {
     padding: 1vw 0;
 }
 
+
+/*main ends here*/
+
+
+/*footer starts here*/
+
 * footer {
     background-color: black;
     width: 100%;
@@ -326,6 +341,12 @@ p>a {
     padding-bottom: 0.5vw;
     background-color: black;
 }
+
+
+/*footer ends here*/
+
+
+/* media query starts here*/
 
 @media screen and (max-width: 480px) {
     header .topright {
@@ -479,7 +500,4 @@ p>a {
         padding: 4vw;
         font-size: 1vw;
     }
-}
-
-
 }

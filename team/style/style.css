@@ -1,281 +1,288 @@
-    * {
-        margin: 0;
-        padding: 0;
-        font-size: 1vw;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    * header {
-        width: 100%;
-        background-color: #FFF3F3;
-        height: 12vw;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    
-    * header .topleft {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        padding: 4vw 3vw;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-    }
-    
-    * header .topleft .logotyp {
-        width: 80%;
-        height: 4.2vw;
-    }
-    
-    * header .topright {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        padding: 2vw 3vw;
-    }
-    
-    * header .topright .baner1 {
-        width: 60vw;
-        height: 8vw;
-    }
-    
-    * #menu {
-        width: 100%;
-        height: 3em;
-        background-color: #8E1616;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 0px;
-        -webkit-box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
-        -moz-box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
-        box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
-    }
-    
-    * #menu ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    
-    * #menu ul li {
-        list-style: none;
-        margin: 0.5vw 3vw;
-    }
-    
-    * #menu ul li a {
-        text-decoration: none;
-        font-size: 1.8vw;
-        color: white;
-    }
-    
-    h1 {
-        text-align: center;
-        font-size: 3vw;
-        padding: 5vw 0;
-    }
-    
-    h2 {
-        font-size: 2vw;
-        display: inline;
-        margin: 3vw 0;
-    }
-    
-    h3 {
-        font-size: 1.5vw;
-        display: inline;
-    }
-    
-    .container {
-        width: 90%;
-        height: 50vw;
-        display: flex;
-        justify-content: space-between;
-        margin: 1vw auto;
-    }
-    
-    #boxben,
-    #boxlucy,
-    #boxsara,
-    #boxdan {
-        width: 22.5%;
-        text-align: center;
-        padding-top: 5vw;
-    }
-    
-    #result1>img,
-    #result2>img,
-    #result3>img,
-    #result4>img {
-        width: 80%;
-        padding-top: 5vw;
-        object-fit: contain;
-    }
-    
-    #ben,
-    #lucy,
-    #sara,
-    #dan {
-        width: 13vw;
-        text-align: center;
-        background-color: #8E1616;
-        color: white;
-        border-radius: 3vw;
-        border: none;
-        padding: 1vw;
-        margin: 0 0 3vw;
-        font-size: 2vw;
-        -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
-        -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
-        cursor: pointer;
-    }
-    
-    #ben:hover,
-    #lucy:hover,
-    #sara:hover,
-    #dan:hover {
-        background-color: rgb(255, 0, 0);
-    }
-    
-    * footer {
-        background-color: black;
-        width: 100%;
-        height: 18vw;
-    }
-    
-    * footer #menubottom {
-        width: 100%;
-        height: 3em;
-        background-color: black;
-    }
-    
-    * footer #menubottom ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    
-    * footer #menubottom ul li {
-        list-style: none;
-        margin: 2vw 3vw;
-    }
-    
-    * footer #menubottom ul li a {
-        text-decoration: none;
-        font-size: 1.5vw;
-        color: white;
-    }
-    
-    * footer .footerimg {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-        padding-right: 5vw;
-        padding-top: 3.5vw;
-        width: 100%;
-    }
-    
-    * footer .footerimg .logotyp {
-        width: 22%;
-        height: 4.5vw;
-    }
-    
-    * footer h4 {
-        display: block;
-        text-align: center;
-        color: white;
-        height: 5vw;
-        padding-top: 2vw;
-    }
-    
-    * footer p,
-    p>a {
-        color: white;
-        font-size: 0.8vw;
-        text-decoration: none;
-        font-weight: lighter;
-        padding-bottom: 0.5vw;
-        background-color: black;
-    }
-    
-    @media screen and (max-width: 480px) {
-        header .topright {
-            display: none;
-        }
-        header .topleft {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            padding: 4vw 3vw;
-            -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-        }
-        header .topleft .logotyp {
-            width: 20vw;
-            height: 5.5vw;
-            padding-top: 1vw;
-        }
-        #menu ul,
-        footer ul {
-            padding: 0 35vw;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-        }
-        .container {
-            flex-wrap: wrap;
-            width: 100%;
-            height: 100%;
-            padding-bottom: 2vw;
-        }
-        #boxben,
-        #boxlucy,
-        #boxsara,
-        #boxdan {
-            width: 50%;
-            flex-wrap: wrap;
-        }
-        footer {
-            width: 100%;
-            height: 25vw;
-            background-color: black;
-            padding: 0.5vw 0;
-        }
-        footer .footerimg {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            width: 100%;
-            padding: 5vw 0;
-        }
-        footer .footerimg .logotyp {
-            width: 21%;
-        }
-        footer h4 {
-            padding: 1vw;
-            font-size: 1vw;
-        }
-    }
+ * {
+     margin: 0;
+     padding: 0;
+     font-size: 1vw;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ /*header and nav starts*/
+ 
+ * header {
+     width: 100%;
+     background-color: #FFF3F3;
+     height: 12vw;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+ }
+ 
+ * header .topleft {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     padding: 4vw 3vw;
+     -webkit-box-pack: start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
+     -ms-flex-preferred-size: 30%;
+     flex-basis: 30%;
+ }
+ 
+ * header .topleft .logotyp {
+     width: 80%;
+     height: 4.2vw;
+ }
+ 
+ * header .topright {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -ms-flex-preferred-size: 70%;
+     flex-basis: 70%;
+     -webkit-box-pack: end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
+     padding: 2vw 3vw;
+ }
+ 
+ * header .topright .baner1 {
+     width: 60vw;
+     height: 8vw;
+ }
+ 
+ * #menu {
+     width: 100%;
+     height: 3em;
+     background-color: #8E1616;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0px;
+     -webkit-box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
+     -moz-box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
+     box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
+ }
+ 
+ * #menu ul {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+ }
+ 
+ * #menu ul li {
+     list-style: none;
+     margin: 0.5vw 3vw;
+ }
+ 
+ * #menu ul li a {
+     text-decoration: none;
+     font-size: 1.8vw;
+     color: white;
+ }
+ /*header and nav ends*/
+ /*main starts*/
+ 
+ h1 {
+     text-align: center;
+     font-size: 3vw;
+     padding: 5vw 0;
+ }
+ 
+ h2 {
+     font-size: 2vw;
+     display: inline;
+     margin: 3vw 0;
+ }
+ 
+ h3 {
+     font-size: 1.5vw;
+     display: inline;
+ }
+ 
+ .container {
+     width: 90%;
+     height: 50vw;
+     display: flex;
+     justify-content: space-between;
+     margin: 1vw auto;
+ }
+ 
+ #boxben,
+ #boxlucy,
+ #boxsara,
+ #boxdan {
+     width: 22.5%;
+     text-align: center;
+     padding-top: 5vw;
+ }
+ 
+ #result1>img,
+ #result2>img,
+ #result3>img,
+ #result4>img {
+     width: 80%;
+     padding-top: 5vw;
+     object-fit: contain;
+ }
+ 
+ #ben,
+ #lucy,
+ #sara,
+ #dan {
+     width: 13vw;
+     text-align: center;
+     background-color: #8E1616;
+     color: white;
+     border-radius: 3vw;
+     border: none;
+     padding: 1vw;
+     margin: 0 0 3vw;
+     font-size: 2vw;
+     -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
+     -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
+     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
+     cursor: pointer;
+ }
+ 
+ #ben:hover,
+ #lucy:hover,
+ #sara:hover,
+ #dan:hover {
+     background-color: rgb(255, 0, 0);
+ }
+ /*main ends*/
+ /*footer starts*/
+ 
+ * footer {
+     background-color: black;
+     width: 100%;
+     height: 18vw;
+ }
+ 
+ * footer #menubottom {
+     width: 100%;
+     height: 3em;
+     background-color: black;
+ }
+ 
+ * footer #menubottom ul {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+ }
+ 
+ * footer #menubottom ul li {
+     list-style: none;
+     margin: 2vw 3vw;
+ }
+ 
+ * footer #menubottom ul li a {
+     text-decoration: none;
+     font-size: 1.5vw;
+     color: white;
+ }
+ 
+ * footer .footerimg {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: end;
+     -ms-flex-pack: end;
+     justify-content: flex-end;
+     padding-right: 5vw;
+     padding-top: 3.5vw;
+     width: 100%;
+ }
+ 
+ * footer .footerimg .logotyp {
+     width: 22%;
+     height: 4.5vw;
+ }
+ 
+ * footer h4 {
+     display: block;
+     text-align: center;
+     color: white;
+     height: 5vw;
+     padding-top: 2vw;
+ }
+ 
+ * footer p,
+ p>a {
+     color: white;
+     font-size: 0.8vw;
+     text-decoration: none;
+     font-weight: lighter;
+     padding-bottom: 0.5vw;
+     background-color: black;
+ }
+ /*footer ends*/
+ /*media query starts*/
+ 
+ @media screen and (max-width: 480px) {
+     header .topright {
+         display: none;
+     }
+     header .topleft {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         padding: 4vw 3vw;
+         -ms-flex-preferred-size: 100%;
+         flex-basis: 100%;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+     }
+     header .topleft .logotyp {
+         width: 20vw;
+         height: 5.5vw;
+         padding-top: 1vw;
+     }
+     #menu ul,
+     footer ul {
+         padding: 0 35vw;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+         justify-content: space-between;
+     }
+     .container {
+         flex-wrap: wrap;
+         width: 100%;
+         height: 100%;
+         padding-bottom: 2vw;
+     }
+     #boxben,
+     #boxlucy,
+     #boxsara,
+     #boxdan {
+         width: 50%;
+         flex-wrap: wrap;
+     }
+     footer {
+         width: 100%;
+         height: 25vw;
+         background-color: black;
+         padding: 0.5vw 0;
+     }
+     footer .footerimg {
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-pack: center;
+         -ms-flex-pack: center;
+         justify-content: center;
+         width: 100%;
+         padding: 5vw 0;
+     }
+     footer .footerimg .logotyp {
+         width: 21%;
+     }
+     footer h4 {
+         padding: 1vw;
+         font-size: 1vw;
+     }
+ }
