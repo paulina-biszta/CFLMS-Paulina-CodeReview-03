@@ -85,9 +85,20 @@
         padding: 5vw 0;
     }
     
+    h2 {
+        font-size: 2vw;
+        display: inline;
+        margin: 3vw 0;
+    }
+    
+    h3 {
+        font-size: 1.5vw;
+        display: inline;
+    }
+    
     .container {
         width: 90%;
-        height: 40vw;
+        height: 50vw;
         display: flex;
         justify-content: space-between;
         margin: 1vw auto;
@@ -102,6 +113,15 @@
         padding-top: 5vw;
     }
     
+    #result1>img,
+    #result2>img,
+    #result3>img,
+    #result4>img {
+        width: 80%;
+        padding-top: 5vw;
+        object-fit: contain;
+    }
+    
     #ben,
     #lucy,
     #sara,
@@ -113,10 +133,11 @@
         border-radius: 3vw;
         border: none;
         padding: 1vw;
+        margin: 0 0 3vw;
         font-size: 2vw;
-        -webkit-box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
-        -moz-box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
-        box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
+        -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.64);
     }
     
     * footer {
@@ -212,6 +233,19 @@
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
+        }
+        .container {
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            padding-bottom: 2vw;
+        }
+        #boxben,
+        #boxlucy,
+        #boxsara,
+        #boxdan {
+            width: 50%;
+            flex-wrap: wrap;
         }
         footer {
             width: 100%;
