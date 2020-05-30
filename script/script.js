@@ -20,4 +20,5 @@ function calculateInsurance() {
 
     }
 }
+
 document.getElementById("calculate").addEventListener("click", calculateInsurance)
