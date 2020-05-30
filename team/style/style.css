@@ -79,183 +79,44 @@
         color: white;
     }
     
-    * #background {
-        width: 100%;
-        height: 70vw;
-        background-color: #CECECE;
-    }
-    
-    * #backgroundimg {
-        width: 100%;
-        height: 53vw;
-        background-image: url(../img/traffic-332857_1920.jpg);
-        background-size: cover;
-    }
-    
-    * h1 {
-        color: white;
+    h1 {
+        text-align: center;
         font-size: 3vw;
-        padding: 4vw 5vw 1vw;
-        font-weight: lighter;
+        padding: 5vw 0;
     }
     
-    * h2 {
-        color: black;
-        font-size: 3.2vw;
-        font-weight: 540;
-        text-align: center;
-        padding: 1.5vw 22vw;
-        line-height: 1.5em;
-    }
-    
-    * #form {
-        width: 80%;
-        height: 47vw;
-        background-color: rgba(255, 255, 255, 0.75);
+    .container {
+        width: 90%;
+        height: 40vw;
+        display: flex;
+        justify-content: space-between;
         margin: 1vw auto;
-        border: 0.15vw solid gray;
     }
     
-    * #inputs {
-        width: 100%;
-        padding: 1vw auto;
+    #boxben,
+    #boxlucy,
+    #boxsara,
+    #boxdan {
+        width: 22.5%;
+        text-align: center;
+        padding-top: 5vw;
     }
     
-    * form {
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-    }
-    
-    * #top,
-    #bottom {
-        display: flex;
-        justify-content: space-between;
-        margin: 2vw 10vw;
-        border-radius: 30%;
-    }
-    
-    #box {
-        display: flex;
-        flex-flow: column;
-    }
-    
-    label {
-        font-size: 1.5vw;
-        font-weight: 500;
-    }
-    
-    input,
-    select {
-        width: 25vw;
-        height: 3.5vw;
-        font-size: 1.5vw;
-        font-weight: 500;
-        padding: 0 0.5vw;
-    }
-    
-    #selectOption {
-        -moz-appearance: none;
-        appearance: none;
-        -webkit-appearance: none;
-        background: url(../img/down-arrow.png) no-repeat right;
-        background-position: 95% 50%;
-        background-size: 1.8;
-        background-color: white;
-        padding-right: 2vw;
-    }
-    
-    button {
-        margin: 2vw auto;
-        display: block;
-        background-color: green;
-        text-decoration: none;
-        width: 20vw;
-        height: 3vw;
-        border-radius: 1vw;
-        border-style: none;
+    #ben,
+    #lucy,
+    #sara,
+    #dan {
+        width: 13vw;
+        text-align: center;
+        background-color: #8E1616;
         color: white;
-        font-size: 2.5vw;
-    }
-    
-    #result {
-        color: green;
-        font-size: 2.3vw;
-        margin: 3.3vw 15vw 0;
-        font-weight: medium;
-    }
-    
-    h3 {
-        text-align: center;
-        font-size: 2.5vw;
-        font-weight: 540;
-        line-height: 1.5em;
-    }
-    
-    p {
-        text-align: center;
-        font-size: 1.8vw;
-        font-weight: 540;
-        margin: 0 25vw;
-        line-height: 1.5em;
-    }
-    
-    #whitecontainer {
-        display: flex;
-        justify-content: space-between;
-        margin: 8vw 8vw;
-    }
-    
-    #left,
-    #right {
-        width: 35vw;
-        height: 28vw;
-        border-top: 0.2vw solid;
-        border-bottom: 0.1vw solid rgba(90, 82, 82, 0.4);
-        border-left: 0.1vw solid rgba(90, 82, 82, 0.4);
-        border-right: 0.1vw solid rgba(90, 82, 82, 0.4);
-        -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.48);
-        -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.48);
-        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.48);
-        padding: 3vw;
-    }
-    
-    #left>h3,
-    #right>h3 {
-        color: rgb(83, 103, 167);
-        text-align: left;
-        line-height: 1em;
+        border-radius: 3vw;
+        border: none;
+        padding: 1vw;
         font-size: 2vw;
-    }
-    
-    #left>p,
-    #right>p {
-        font-size: 1.4vw;
-        margin: 0;
-        text-align: left;
-        color: rgba(0, 0, 0, 0.7);
-    }
-    
-    #left>ul,
-    #right>ul {
-        margin: 1vw 0;
-        list-style: none;
-        line-height: 2.5em;
-    }
-    
-    #left ul li,
-    #right ul li {
-        font-size: 1.4vw;
-        color: rgba(0, 0, 0, 0.7);
-    }
-    
-    span {
-        color: green;
-        padding-right: 2vw;
-    }
-    
-    * h4 {
-        padding: 1vw 0;
+        -webkit-box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
+        -moz-box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
+        box-shadow: 0px 31px 25px 0px rgba(0, 0, 0, 0.64);
     }
     
     * footer {
@@ -351,41 +212,6 @@
             -webkit-box-pack: justify;
             -ms-flex-pack: justify;
             justify-content: space-between;
-        }
-        #form {
-            width: 100%;
-            border: none;
-        }
-        h2 {
-            padding: 1.5vw 15vw;
-        }
-        label {
-            font-size: 2vw;
-            font-weight: 500;
-        }
-        input,
-        select {
-            width: 30vw;
-            height: 5vw;
-            font-size: 1.5vw;
-            font-weight: 500;
-        }
-        #whitecontainer {
-            flex-flow: column;
-        }
-        #left,
-        #right {
-            width: 60vw;
-            height: 28vw;
-            border-top: 0.2vw solid;
-            border-bottom: 0.1vw solid rgba(90, 82, 82, 0.4);
-            border-left: 0.1vw solid rgba(90, 82, 82, 0.4);
-            border-right: 0.1vw solid rgba(90, 82, 82, 0.4);
-            -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.48);
-            -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.48);
-            box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.48);
-            padding: 3vw;
-            margin: 3vw auto;
         }
         footer {
             width: 100%;
